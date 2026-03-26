@@ -8,7 +8,7 @@ A Python CLI tool that generates Fritzing-style breadboard wiring diagrams AND I
 ![schematic diagram](/example/img/tamagotchi_diagram_schematic.png)
 ## Why?
 
-AI image generators produce beautiful but *wrong* circuit diagrams — hallucinated connections, imaginary pins, impossible wire routes. WireWeaver eliminates this entirely by using a strict programmatic approach:
+I needed to programatically make Fritzing-style breadboard wiring diagrams for a deranged art project, and while there were great CLI schematic diagram generators, there wasn't one for breadboarding, and other programs required creating heavy & highly specialized XML files.
 
 - **Components** are drawn procedurally with exact pin coordinates
 - **Wires** are routed via A* pathfinding with collision avoidance  
@@ -64,12 +64,12 @@ python breadboard_diagram.py my_circuit.json -o my_output.svg --png --scale 3.0
 
 The `"parts"` array defines components. Each part needs:
 
-| Field | Required | Description |
-|---|---|---|
-| `type` | Yes | Component type (see table below) |
-| `id` | Yes | Unique identifier for wiring references |
-| `x`, `y` | Yes* | Position on canvas (*breadboard mode only; auto-placed in schematic mode*) |
-| `attrs` | No | Component-specific attributes (e.g., `{"color": "green"}`) |
+| Field    | Required | Description                                                                |
+|----------|----------|----------------------------------------------------------------------------|
+| `type`   | Yes      | Component type (see table below)                                           |
+| `id`     | Yes      | Unique identifier for wiring references                                    |
+| `x`, `y` | Yes*     | Position on canvas (*breadboard mode only; auto-placed in schematic mode*) |
+| `attrs`  | No       | Component-specific attributes (e.g., `{"color": "green"}`)                 |
 
 ### Supported Component Types
 
