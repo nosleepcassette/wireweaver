@@ -1,0 +1,32 @@
+{
+    "title": "The Desperate Tamagotchi",
+    "description": "Arduino Uno + RPi + MAX7219 LED Matrix, Potentiometer, Button, Buzzer",
+
+    "parts": [
+        {"type": "raspberry-pi", "id": "rpi", "x": 40, "y": 30},
+        {"type": "arduino-uno", "id": "uno", "x": 300, "y": 60},
+        {"type": "breadboard", "id": "bb", "x": 140, "y": 520},
+        {"type": "max7219-matrix", "id": "matrix", "x": 600, "y": 120, "attrs": {"color": "red"}},
+        {"type": "potentiometer", "id": "pot", "x": 170, "y": 430},
+        {"type": "pushbutton", "id": "btn", "x": 270, "y": 438, "attrs": {"color": "green"}},
+        {"type": "piezo-buzzer", "id": "buzzer", "x": 360, "y": 420}
+    ],
+
+    "connections": [
+        {"from": "uno:5V", "to": "bb:tp.1", "label": "+5V"},
+        {"from": "uno:GND.1", "to": "bb:tn.1"},
+        {"from": "matrix:VCC", "to": "bb:tp.10"},
+        {"from": "matrix:GND", "to": "bb:tn.10"},
+        {"from": "matrix:DIN", "to": "uno:11", "label": "MOSI"},
+        {"from": "matrix:CS", "to": "uno:10", "label": "SS"},
+        {"from": "matrix:CLK", "to": "uno:13", "label": "SCK"},
+        {"from": "pot:1", "to": "bb:tp.5"},
+        {"from": "pot:3", "to": "bb:tn.5"},
+        {"from": "pot:2", "to": "uno:A0", "label": "WIPER"},
+        {"from": "btn:1.1", "to": "bb:tn.15"},
+        {"from": "btn:2.1", "to": "uno:2", "label": "BTN"},
+        {"from": "buzzer:1", "to": "bb:tn.20"},
+        {"from": "buzzer:2", "to": "uno:9", "label": "PWM"},
+        {"from": "rpi:USB1", "to": "uno:USB", "label": "SERIAL"}
+    ]
+}
