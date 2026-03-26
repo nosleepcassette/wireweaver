@@ -1,4 +1,4 @@
-# HANDOVER: Breadboard-as-Code Diagram Generator
+[#](#) HANDOVER: Breadboard-as-Code Diagram Generator
 
 ## Date: 2026-03-25
 ## Agent: cassette (Claude Opus 4.6)
