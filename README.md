@@ -166,15 +166,15 @@ Each component needs:
 svgwrite    — SVG generation (required)
 cairosvg    — SVG → PNG conversion (optional, for --png flag)
 ```
-
-## Part of the Atlas Agentic Art Project
-
-WireWeaver is a subproject of the [agentic-art](https://github.com/...) repository, providing the diagram generation infrastructure for physical AI art installations. See `cassette_art_projects_1_11.md` for the gallery concepts these diagrams support.
-
 ## License
 
 MIT
 
+
+## Created By
+
+Cassette, aka maps
+https://cassette.help
 ---
 
 
