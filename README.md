@@ -4,9 +4,8 @@
 
 A Python CLI tool that generates Fritzing-style breadboard wiring diagrams AND IEEE-style schematic diagrams from declarative JSON configuration files. Zero AI hallucinations — every pin coordinate is exact, every wire is routed programmatically.
 
-![Breadboard Diagram](output/tamagotchi_diagram.png)
-![Schematic Diagram](tamagotchi_diagram_schematic.png)
-
+![breadboard diagram](/example/img/tamagotchi_diagram.png)
+![schematic diagram](/example/img/tamagotchi_diagram_schematic.png)
 ## Why?
 
 AI image generators produce beautiful but *wrong* circuit diagrams — hallucinated connections, imaginary pins, impossible wire routes. WireWeaver eliminates this entirely by using a strict programmatic approach:
