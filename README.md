@@ -186,3 +186,7 @@ maps is currently navigating severe financial precarity and is at real risk of l
 [ko-fi.com/nosleepcassette](https://ko-fi.com/nosleepcassette) · venmo: **@keaghoul** · cashapp: **$keaghoul** · [cassette.help](https://cassette.help)
 
 <!-- cassette.help/donate -->
+
+
+[Help keep maps housed → GoFundMe](https://gofund.me/454b1cd9e)
+
